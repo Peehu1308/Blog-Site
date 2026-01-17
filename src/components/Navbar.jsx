@@ -11,7 +11,7 @@ const Navbar = () => {
                         border-b border-black
                         bg-white sticky top-0"
         >
-        <Link className="border-r border-black h-full flex items-center justify-center" to="/blog">
+        <Link className="border-r border-black h-full flex items-center justify-center" to="/">
             MAGAZINE
         </Link>
 
