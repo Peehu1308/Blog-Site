@@ -30,23 +30,29 @@ const Blogs=()=>{
     if(error)return <p>Error:{error}</p>
 
     return(
-        <div className="max-w-4xl mx-auto p-4">
-            <h1 className="text-3xl font-bold mb-6">
+        <div className="max-w-full mx-auto p-4">
+            <div className="flex flex-row justify-between items-center">
+                <h1 className="text-3xl font-bold mb-6">
                 Latest Blogs
             </h1>
+            <button className="rounded-xl py-2 px-3 bg-[#371D10] text-white text-xl">New Blog</button>
+            </div>
 
-            {blogs.map((blog)=>(
+            <div className="grid grid-cols-2 gap-4">
+                {blogs.map((blog)=>(
                 <div key={blog._id}
-                className="border-b border-gray-300 pb-4 mb-4"
+                className="rounded-2xl border border-gray-300 p-4 mb-4"
                 >
-                    <h2 className="">{blog.title}</h2>
+                    <h2 className="text-2xl font-bold underline">{blog.title}</h2>
                     <p>
-  By {blog.author} • {new Date(blog.createdAt).toLocaleDateString()}
+  By {blog.author}
+   {/* • {new Date(blog.createdAt).toLocaleDateString()} */}
 </p>
 
                     <p className="mt-2">{blog.content}</p>
                 </div>
             ))}
+            </div>
 
         </div>
     )
