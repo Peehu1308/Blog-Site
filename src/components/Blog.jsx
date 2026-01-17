@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 
 const Blogs=()=>{
     const [blogs,setblogs]=useState([]);
@@ -35,7 +36,9 @@ const Blogs=()=>{
                 <h1 className="text-3xl font-bold mb-6">
                 Latest Blogs
             </h1>
-            <button className="rounded-xl py-2 px-3 bg-[#371D10] text-white text-xl">New Blog</button>
+            
+            <Link to="/addblog" className="rounded-xl py-2 px-3 bg-[#371D10] text-white text-xl" >New Blog</Link>
+            
             </div>
 
             <div className="grid grid-cols-2 gap-4">
