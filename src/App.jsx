@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Homescreen from './screen/Homescreen'
 import Blogs from './components/Blog'
+import AddBlog from './components/AddBlog'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homescreen/>}/>
         <Route path="/blog" element={<Blogs/>}/>
+        <Route path="/addblog" element={<AddBlog/>}/>
       </Routes>
       </BrowserRouter>
       
