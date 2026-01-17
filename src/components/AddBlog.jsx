@@ -47,7 +47,7 @@ const AddBlog=()=>{
     };
 
     return(
-        <div className="max-w-xl mx-auto p-6 bg-white shadow rounded">
+        <div className="m-3 max-w-4xl mx-auto p-6 bg-white shadow rounded">
             <h2 className="text-2xl font-bold mb-4">Add New Blog</h2>
 
             {error && <p className="text-red-500">{error}</p>}
@@ -61,6 +61,7 @@ const AddBlog=()=>{
 
                 <input type="text"
                 placeholder="Author"
+                className="w-full border p-2"
                 value={author}
                 onChange={(e)=>setauthor(e.target.value)} />
 
