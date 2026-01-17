@@ -16,7 +16,7 @@ app.get("/",(req,res)=>{
     res.send("Blogging app running")
 });
 
-
+app.use("/api/blogs",blogroutes)
 const PORT=process.env.PORT|| 5000;
 app.listen(PORT,()=>{
     console.log(`server running on ${PORT}`)
