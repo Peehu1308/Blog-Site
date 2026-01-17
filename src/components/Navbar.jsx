@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -10,9 +11,9 @@ const Navbar = () => {
                         border-b border-black
                         bg-white sticky top-0"
         >
-        <div className="border-r border-black h-full flex items-center justify-center" href="/">
+        <Link className="border-r border-black h-full flex items-center justify-center" to="/blog">
             MAGAZINE
-        </div>
+        </Link>
 
         <div className="border-r border-black h-full flex items-center justify-center">
             NEWSLETTERS
