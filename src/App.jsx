@@ -9,7 +9,7 @@ function App() {
   
 
   return (
-    <div className='bg-[#F4F2F2] min-h-screen w-full top-0 '>
+    <div className='bg-[#F4F2F2] min-h-screen w-full top- '>
       
       <BrowserRouter>
       <Navbar/>
